@@ -1,2 +1,2 @@
 # RodianBandi.github.io
-Demo PAge
+Demo Page
