@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/lib/bootstrap-4.5.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/lib/fontawesome-free-5.13.1-web/css/all.css">
+    <!-- <link rel="stylesheet" href="/lib/bootstrap-4.5.0-dist/css/form.css"> -->
+    <title>DMR LIST</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div>
+                <h1 style="text-align:center; font-weight: 700;">DMR INDEX</h1>
+                <div class="input-group">
+                    <label for="Device_Name" class="input-group-text">Device Name</label>
+                    <input class="form-control" id="Device_Name" type="text" name="text" required
+                            placeholder="Device Name">
+                </div>
+                <div class="input-group">
+                    <label for="Device_PIN" class="input-group-text">Device PIN</label>
+                    <input class="form-control" id="Device_PIN" type="text" name="text" required
+                            placeholder="Device PIN">
+                </div>
+                <div class="input-group">
+                    <label for="Document_Number" class="input-group-text">Document Number</label>
+                    <input class="form-control" id="Document_Number" type="text" name="text" required
+                            placeholder="Document Number">
+                </div>
+                <div class="input-group">
+                    <label for="Document_Version" class="input-group-text">Document Version</label>
+                    <input class="form-control" id="Document_Version" type="text" name="text" required
+                            placeholder="Document_Version">
+                </div>
+                <table class="table table-bordered table-sm table-hover">
+                    <thead class="table-dark" style="font-size:large;">
+                        <tr>
+                            <th>#</th>
+                            <th>Document ID</th>
+                            <th>Description/Title of document</th>
+                            <th>Location</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-warning">
+                            <th>A</th>
+                            <th>Device Specification</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td style="text-align:center;"><input class="form-controll" type="text" name="Device ID"
+                                    required></td>
+                            <td style="text-align:center;"> <input class="form-controll" type="text"
+                                    name="Device Description" required></td>
+                            <td style="text-align:center;"><input class="form-controll" type="text" name="Location"
+                                    required></td>
+                            <td>
+                                <div class="btn-group">
+                                    <button class="btn-success btn"><i class="fas fa-plus-square"></i></button>
+                                    <button class="btn-info btn"><i class="fas fa-sync-alt"></i></button>
+                                    <button class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="table-warning">
+                            <th>B</th>
+                            <th>Production Process Specifications</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <th class="table-secondary"></th>
+                            <th class="table-secondary" colspan=4>BOM (Bill of Materials)</th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td style="text-align:center;"><input class="form-controll" type="text" name="BOM ID"
+                                    required></td>
+                            <td style="text-align:center;"> <input class="form-controll" type="text"
+                                    name="BOM Description" required></td>
+                            <td style="text-align:center;"><input class="form-controll" type="text" name="Location"
+                                    required></td>
+                            <td>
+                                <div class="btn-group">
+                                    <button class="btn-success btn"><i class="fas fa-plus-square"></i></button>
+                                    <button class="btn-info btn"><i class="fas fa-sync-alt"></i></button>
+                                    <button class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="table-secondary"></th>
+                            <th class="table-secondary" colspan=4>Components and Assembly Drawings</th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td style="text-align:center;"><input class="form-controll" type="text" name="Components ID"
+                                    required></td>
+                            <td style="text-align:center;"> <input class="form-controll" type="text"
+                                    name="Components Description" required></td>
+                            <td style="text-align:center;"><input class="form-controll" type="text" name="Location"
+                                    required></td>
+                            <td>
+                                <div class="btn-group">
+                                    <button class="btn-success btn"><i class="fas fa-plus-square"></i></button>
+                                    <button class="btn-info btn"><i class="fas fa-sync-alt"></i></button>
+                                    <button class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="table-secondary"></th>
+                            <th class="table-secondary" colspan=4>Materials Specifications</th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td style="text-align:center;"><input class="form-controll" type="text" name="Materials ID"
+                                    required></td>
+                            <td style="text-align:center;"> <input class="form-controll" type="text"
+                                    name="Materials Description" required></td>
+                            <td style="text-align:center;"><input class="form-controll" type="text" name="Location"
+                                    required></td>
+                            <td>
+                                <div class="btn-group">
+                                    <button class="btn-success btn"><i class="fas fa-plus-square"></i></button>
+                                    <button class="btn-info btn"><i class="fas fa-sync-alt"></i></button>
+                                    <button class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="table-secondary"></th>
+                            <th class="table-secondary" colspan=4>Manufacturing Instructions</th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td style="text-align:center;"><input class="form-controll" type="text"
+                                    name="Manufacturing ID" required></td>
+                            <td style="text-align:center;"> <input class="form-controll" type="text"
+                                    name="Manufacturing Description" required></td>
+                            <td style="text-align:center;"><input class="form-controll" type="text" name="Location"
+                                    required></td>
+                            <td>
+                                <div class="btn-group">
+                                    <button class="btn-success btn"><i class="fas fa-plus-square"></i></button>
+                                    <button class="btn-info btn"><i class="fas fa-sync-alt"></i></button>
+                                    <button class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="table-secondary"></th>
+                            <th class="table-secondary" colspan=4>Routers</th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td style="text-align:center;"><input class="form-controll" type="text" name="Routers ID"
+                                    required></td>
+                            <td style="text-align:center;"> <input class="form-controll" type="text"
+                                    name="Routers Description" required></td>
+                            <td style="text-align:center;"><input class="form-controll" type="text" name="Location"
+                                    required></td>
+                            <td>
+                                <div class="btn-group">
+                                    <button class="btn-success btn"><i class="fas fa-plus-square"></i></button>
+                                    <button class="btn-info btn"><i class="fas fa-sync-alt"></i></button>
+                                    <button class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="table-secondary"></th>
+                            <th class="table-secondary" colspan=4>Special Processes</th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td style="text-align:center;"><input class="form-controll" type="text"
+                                    name="Special Processes ID" required></td>
+                            <td style="text-align:center;"> <input class="form-controll" type="text"
+                                    name="Special Processes Description" required></td>
+                            <td style="text-align:center;"><input class="form-controll" type="text" name="Location"
+                                    required></td>
+                            <td>
+                                <div class="btn-group">
+                                    <button class="btn-success btn"><i class="fas fa-plus-square"></i></button>
+                                    <button class="btn-info btn"><i class="fas fa-sync-alt"></i></button>
+                                    <button class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="table-secondary"></th>
+                            <th class="table-secondary" colspan=4>Testing, monitoring and utility softwares</th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td style="text-align:center;"><input class="form-controll" type="text" name="Testing ID"
+                                    required></td>
+                            <td style="text-align:center;"> <input class="form-controll" type="text"
+                                    name="Testing Description" required></td>
+                            <td style="text-align:center;"><input class="form-controll" type="text" name="Location"
+                                    required></td>
+                            <td>
+                                <div class="btn-group">
+                                    <button class="btn-success btn"><i class="fas fa-plus-square"></i></button>
+                                    <button class="btn-info btn"><i class="fas fa-sync-alt"></i></button>
+                                    <button class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="table-warning">
+                            <th>C</th>
+                            <th>Quality Assurance Procedures</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <th class="table-secondary"></th>
+                            <th class="table-secondary" colspan=4>Quality System Procedures</th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td style="text-align:center;"><input class="form-controll" type="text" name="Quality ID"
+                                    required></td>
+                            <td style="text-align:center;"> <input class="form-controll" type="text"
+                                    name="Quality Description" required></td>
+                            <td style="text-align:center;"><input class="form-controll" type="text" name="Location"
+                                    required></td>
+                            <td>
+                                <div class="btn-group">
+                                    <button class="btn-success btn"><i class="fas fa-plus-square"></i></button>
+                                    <button class="btn-info btn"><i class="fas fa-sync-alt"></i></button>
+                                    <button class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="table-secondary"></th>
+                            <th class="table-secondary" colspan=4>Inspection and Test Procedures</th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td style="text-align:center;"><input class="form-controll" type="text" name="Inspection ID"
+                                    required></td>
+                            <td style="text-align:center;"> <input class="form-controll" type="text"
+                                    name="Inspection Description" required></td>
+                            <td style="text-align:center;"><input class="form-controll" type="text" name="Location"
+                                    required></td>
+                            <td>
+                                <div class="btn-group">
+                                    <button class="btn-success btn"><i class="fas fa-plus-square"></i></button>
+                                    <button class="btn-info btn"><i class="fas fa-sync-alt"></i></button>
+                                    <button class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="table-secondary"></th>
+                            <th class="table-secondary" colspan=4>Product Release Procedures</th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td style="text-align:center;"><input class="form-controll" type="text" name="Product ID"
+                                    required></td>
+                            <td style="text-align:center;"> <input class="form-controll" type="text"
+                                    name="Product Description" required></td>
+                            <td style="text-align:center;"><input class="form-controll" type="text" name="Location"
+                                    required></td>
+                            <td>
+                                <div class="btn-group">
+                                    <button class="btn-success btn"><i class="fas fa-plus-square"></i></button>
+                                    <button class="btn-info btn"><i class="fas fa-sync-alt"></i></button>
+                                    <button class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="table-warning">
+                            <th>D</th>
+                            <th>Packaging and Labeling Specifications</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td style="text-align:center;"><input class="form-controll" type="text" name="Packaging ID"
+                                    required></td>
+                            <td style="text-align:center;"> <input class="form-controll" type="text"
+                                    name="Packaging Description" required></td>
+                            <td style="text-align:center;"><input class="form-controll" type="text" name="Location"
+                                    required></td>
+                            <td>
+                                <div class="btn-group">
+                                    <button class="btn-success btn"><i class="fas fa-plus-square"></i></button>
+                                    <button class="btn-info btn"><i class="fas fa-sync-alt"></i></button>
+                                    <button class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="table-warning">
+                            <th>E</th>
+                            <th>Installation, Maintenance and Servicing</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td style="text-align:center;"><input class="form-controll" type="text"
+                                    name="Installation ID" required></td>
+                            <td style="text-align:center;"> <input class="form-controll" type="text"
+                                    name="Installation Description" required></td>
+                            <td style="text-align:center;"><input class="form-controll" type="text" name="Location"
+                                    required></td>
+                            <td>
+                                <div class="btn-group">
+                                    <button class="btn-success btn"><i class="fas fa-plus-square"></i></button>
+                                    <button class="btn-info btn"><i class="fas fa-sync-alt"></i></button>
+                                    <button class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="table-warning">
+                            <th>F</th>
+                            <th>Device History Record Contents</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td style="text-align:center;"><input class="form-controll" type="text"
+                                    name="Device History ID" required></td>
+                            <td style="text-align:center;"> <input class="form-controll" type="text"
+                                    name="Device History Description" required></td>
+                            <td style="text-align:center;"><input class="form-controll" type="text" name="Location"
+                                    required></td>
+                            <td>
+                                <div class="btn-group">
+                                    <button class="btn-success btn"><i class="fas fa-plus-square"></i></button>
+                                    <button class="btn-info btn"><i class="fas fa-sync-alt"></i></button>
+                                    <button class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>>
+</body>

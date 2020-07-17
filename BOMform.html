@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="/lib/bootstrap-4.5.0-dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="/lib/fontawesome-free-5.13.1-web/css/all.css">
+    <link rel="stylesheet" href="/lib/bootstrap-4.5.0-dist/css/form.css">
+    <title>BOM-Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 style="text-align:center; font-weight: 700;">BOM-FORM</h1>
+        <form>
+            <fieldset>
+                <legend>BOM DATA</legend>
+
+                <div class="bom-text">
+                    <label for="Sh-descript">Short description </label>
+                    <input id="Sh-descript" type="text" name="text" required
+                        placeholder="Short description">
+                </div>
+
+
+                <div class="bom-number">
+                    <label for="B-number">BOM Number </label>
+                    <input id="B-number" type="text" name="text" required placeholder="BOM number">
+                </div>
+
+
+                <div class="bom-text">
+                    <label for="B-rev">BOM Revision </label>
+                    <input class="revision" id="B-rev" type="text" name="text" required value="X1">
+                </div>
+
+
+                <div class="bom-text">
+                    <label for="B-qty">BOM Quantity </label>
+                    <input class="unit" id="B-qty" type="number" name="number" required value="1"> <label>Unit</label> <select
+                        name="pieces" id="pieces">
+                        <option value="0" selected>-</option>
+                        <option value="1">pcs</option>
+                        <option value="2">kg</option>
+                        <option value="3">ml</option>
+                        <option value="4">mm</option>
+                    </select>
+                </div>
+
+
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>BOM description</legend>
+                <div class="full-text">
+                    <label for="Full-descript">Full description </label>
+                    <textarea class="bom-text" id="Full-descript" type="text" name="text"></textarea>
+                </div>
+            </fieldset>
+
+
+
+        </form>
+
+
+    </div>
+</body>
+
+</html>
