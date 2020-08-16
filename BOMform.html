@@ -4,68 +4,271 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="/lib/bootstrap-4.5.0-dist/css/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="/lib/fontawesome-free-5.13.1-web/css/all.css">
     <link rel="stylesheet" href="/lib/bootstrap-4.5.0-dist/css/form.css">
+    <link rel="stylesheet" href="/lib/bootstrap-4.5.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/lib/fontawesome-free-5.13.1-web/css/all.css">
+    <link rel="shortcut icon" href="http://www.pin-up.hu/icon.ico">
     <title>BOM-Form</title>
 </head>
 
 <body>
-    
-    <div class="container">
-        <h1 style="text-align:center; font-weight: 700;">BOM-FORM</h1>
-        <form>
-            <fieldset>
-                <legend>BOM DATA</legend>
-
-                <div class="bom-text">
-                    <label for="Sh-descript">Short description </label>
-                    <input id="Sh-descript" type="text" name="text" required
-                        placeholder="Short description">
-                </div>
-
-
-                <div class="bom-number">
-                    <label for="B-number">BOM Number </label>
-                    <input id="B-number" type="text" name="text" required placeholder="BOM number">
-                </div>
-
-
-                <div class="bom-text">
-                    <label for="B-rev">BOM Revision </label>
-                    <input class="revision" id="B-rev" type="text" name="text" required value="X1">
-                </div>
-
-
-                <div class="bom-text">
-                    <label for="B-qty">BOM Quantity </label>
-                    <input class="unit" id="B-qty" type="number" name="number" required value="1"> <label>Unit</label> <select
-                        name="pieces" id="pieces">
-                        <option value="0" selected>-</option>
-                        <option value="1">pcs</option>
-                        <option value="2">kg</option>
-                        <option value="3">ml</option>
-                        <option value="4">mm</option>
-                    </select>
-                </div>
-
-
-            </fieldset>
-            <br>
-            <fieldset>
-                <legend>BOM description</legend>
-                <div class="full-text">
-                    <label for="Full-descript">Full description </label>
-                    <textarea class="bom-text" id="Full-descript" type="text" name="text"></textarea>
-                </div>
-            </fieldset>
-
-
-
-        </form>
-
-
+    <!-- Navigations row -->
+    <div class="pos-f-t">
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4">
+                <h5 class="text-white h4">BOM FORM</h5>
+                <!-- Links -->
+                <nav class="nav">
+                    <!-- Index btn -->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-dark"><a class="nav-link" href="/index.html">Main
+                                Page</a></button>
+                    </div>
+                    <!-- DMR btn -->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-dark"><a class="nav-link"
+                                href="/DMR_Lists.html">DMR_Lists</a></button>
+                        <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="/DMR.html">New DMR</a>
+                        </div>
+                    </div>
+                    <!-- BOM btn -->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-dark"> <a class="nav-link"
+                                href="/BOM_Lists.html">BOM_List</a></button>
+                        <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="/EmptyBOM.html">New BOM</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/BOMform.html">BOM Form</a>
+                        </div>
+                    </div>
+                    <!-- MPI btn -->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-dark"><a class="nav-link" href="#">MPI List</a></button>
+                        <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="#">#</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">#</a>
+                        </div>
+                    </div>
+                    <!-- QII btn -->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-dark"><a class="nav-link" href="#">QII List</a></button>
+                        <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="#">#</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">#</a>
+                        </div>
+                    </div>
+                    <!-- RQR btn -->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-dark"><a class="nav-link" href="#">RTR List</a></button>
+                        <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="#">#</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">#</a>
+                        </div>
+                    </div>
+                    <!-- LBL btn -->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-dark"><a class="nav-link" href="#">LBL List</a></button>
+                        <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="#">#</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">#</a>
+                        </div>
+                    </div>
+                    <!-- MPS btn -->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-dark"><a class="nav-link" href="#">MSP List</a></button>
+                        <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="#">#</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">#</a>
+                        </div>
+                    </div>
+                    <!-- DRAWINGS btn -->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-dark"><a class="nav-link" href="#">List of
+                                Drawings</a></button>
+                        <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="#">#</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">#</a>
+                        </div>
+                    </div>
+                    <!-- Audit Check btn -->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-dark"><a class="nav-link" href="#">AUDIT CHECK
+                                LIST</a></button>
+                        <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="#">#</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">#</a>
+                        </div>
+                    </div>
+                    <!-- Search form -->
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </nav>
+                <span class="text-muted"></span>
+            </div>
+        </div>
+        <!-- Navbar button -->
+        <nav class="navbar navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
     </div>
+
+    <!-- Main page container  -->
+    <div class="row">
+        <!-- Left container -->
+        <div class="col-2">
+            <h3>LOG Files</h3>
+        </div>
+        <!-- Main container -->
+        <div class="col-8">
+            <!-- Empty Form -->
+            <div class="container">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                    Save this BOM
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Save, Are you sure?</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                ...
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="self.close()">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                                <a href="https://w3schools.com/images/myw3schoolsimage.jpg" download="w3logo">
+                                    <img src="https://w3schools.com/images/myw3schoolsimage.jpg" alt="W3Schools"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="bom-form">
+                    <h1 style="text-align:center; font-weight: 700;">BOM-FORM</h1>
+                    <fieldset>
+                        <legend>BOM DATA</legend>
+
+                        <div class="bom-text">
+                            <label for="Sh-descript">Short description </label>
+                            <input id="Sh-descript" type="text" name="text" required placeholder="Short description">
+                        </div>
+
+
+                        <div class="bom-number">
+                            <label for="B-number">BOM Number </label>
+                            <input id="B-number" type="text" name="text" required placeholder="BOM number">
+                        </div>
+
+
+                        <div class="bom-text">
+                            <label for="B-rev">BOM Revision </label>
+                            <input class="revision" id="B-rev" type="text" name="text" required value="X1">
+                        </div>
+
+
+                        <div class="bom-text">
+                            <label for="B-qty">BOM Quantity </label>
+                            <input class="unit" id="B-qty" type="number" name="number" required value="1">
+                            <label>Unit</label> <select name="pieces" id="pieces">
+                                <option value="0" selected>-</option>
+                                <option value="1">pcs</option>
+                                <option value="2">kg</option>
+                                <option value="3">ml</option>
+                                <option value="4">mm</option>
+                            </select>
+                        </div>
+
+
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>BOM description</legend>
+                        <div class="full-text">
+                            <label for="full-descript">Full description </label>
+                            <textarea class="bom-text" id="full-descript" type="text" name="text" rows="30"></textarea>
+                        </div>
+                    </fieldset>
+
+                    Save button
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal" value="Close this window" onclick="self.close()">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+
+
+                </form>
+
+            </div>
+        </div>
+        <div class="col-2">
+            <p>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    Help button
+                </button>
+            </p>
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                    Nihil anim
+                    keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                    <a href="/help.html">More help</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scripts -->
+        <script src="/lib/bootstrap-4.5.0-dist/js/jquery-3.5.1.min.js"></script>
+        <script src="/lib/bootstrap-4.5.0-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

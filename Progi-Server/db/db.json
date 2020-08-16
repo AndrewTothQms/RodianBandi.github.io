@@ -1,0 +1,69 @@
+{
+  "bomdata": [
+    {
+      "id": 4,
+      "level": "qwfe",
+      "description": "asd",
+      "partnumber": "sdasda",
+      "revison": "131",
+      "quantity": "1",
+      "unit": "fafa",
+      "comment": "fasfaw"
+    },
+    {
+      "level": "wfaef",
+      "description": "dvsd",
+      "partnumber": "dfd",
+      "revison": "sdvsd",
+      "quantity": "1",
+      "comment": "efwe",
+      "id": 5
+    }
+  ],
+  "dmrlist": [
+    {
+      "id": 1,
+      "devicename": "jzf",
+      "devicepin": "hkhgj",
+      "documentnumber": "hjfj",
+      "documentversion": "jkgj",
+      "dmrlinks": "kjgzi"
+    },
+    {
+      "devicename": ".kkjgjhc",
+      "devicepin": "trdh",
+      "documentnumber": "hzjzm",
+      "documentversion": ".-lokÁLÁéh",
+      "dmrlinks": "v,nhglg",
+      "id": 2
+    },
+    {
+      "devicename": ".kkjgjhc",
+      "devicepin": "trdh",
+      "documentnumber": "hzjzm",
+      "documentversion": ".-lokÁLÁéh",
+      "dmrlinks": "/htl/bom/links/ps.html",
+      "id": 3
+    }
+  ],
+  "bomlist": [
+    {
+      "bomname": "fsdg",
+      "bomnumber": "sdgsd",
+      "bomlinks": "fsddgs",
+      "id": 1
+    },
+    {
+      "bomname": "fsdg",
+      "bomnumber": "sdgsd",
+      "bomlinks": "fsddgs",
+      "id": 2
+    },
+    {
+      "bomname": "fsdg",
+      "bomnumber": "sdgsd",
+      "bomlinks": "fsddgs",
+      "id": 3
+    }
+  ]
+}
