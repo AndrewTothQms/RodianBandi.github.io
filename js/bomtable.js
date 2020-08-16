@@ -17,7 +17,7 @@ function getServerData(url) {
 };
 
 //function startGetData() {
-getServerData("http://localhost:3000/bomdata").then(
+getServerData("http://rodianbandi.github.io/bomdata").then(
     // data => console.log(data)
     data => fillDataTable(data, "bomTable")
 );
@@ -100,7 +100,7 @@ function delRow(del) {
         cache: "no-cache"
     };
 
-    fetch(`http://localhost:3000/bomdata/${id}`, fetchOptions).then(
+    fetch(`http://rodianbandi.github.io/bomdata/${id}`, fetchOptions).then(
         resp => resp.json(),
         err => console.error(err)
     ).then(
@@ -161,7 +161,7 @@ function addNewData(btn) {
         body: JSON.stringify(data)
     };
     
-    fetch(`http://localhost:3000/bomdata/`, fetchOptions).then(
+    fetch(`http://rodianbandi.github.io/bomdata/`, fetchOptions).then(
         resp => resp.json(),
         err => console.error(err)
         ).then(
@@ -186,7 +186,7 @@ function setRow(btn) {
         },
         body: JSON.stringify(data)
     };
-    fetch(`http://localhost:3000/bomdata/${data.id}`, fetchOptions).then(
+    fetch(`http://rodianbandi.github.io/bomdata/${data.id}`, fetchOptions).then(
                 resp => resp.json(),
                 err => console.error(err)
                 ).then(
@@ -212,7 +212,7 @@ function setRow(btn) {
                 cache: "no-cache"
             };
             
-            fetch(`http://localhost:3000/bomdata/${id}`, fetchOptions).then(
+            fetch(`http://rodianbandi.github.io/bomdata/${id}`, fetchOptions).then(
                 resp => resp.json(),
                 err => console.error(err)
                 ).then(
